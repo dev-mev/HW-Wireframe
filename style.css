@@ -4,7 +4,8 @@ body {
     background: #777;
     width: 960px;
     font-size: 18px;
-    text-align: center
+    text-align: center;
+    margin: auto;
 }
 
 header, nav, section, aside, footer {
@@ -14,14 +15,11 @@ header, nav, section, aside, footer {
 }
 
 section {
-    width: 495px;
-    display: block;
-    float: left;
+    flex: 0 0 495px;
 }
 
 aside {
-    display: block;
-    float: left;
+    flex: 1 1 0;
 }
 
 footer {
@@ -39,5 +37,9 @@ h1, p {
     color: #777;
     background: #ebebeb;
     margin: 10px;
+    padding: 10px;
 }
 
+.container{
+    display: flex;
+}
